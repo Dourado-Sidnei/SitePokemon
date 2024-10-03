@@ -28,7 +28,7 @@ def cadastro():
 
 @app.route('/exibir')
 def exibir():
-    return render_template('Exibir.html', titulo='Pokémons Cadastrados')
+    return render_template('Exibir.html', titulo='Pokémons Cadastrados', lista=lista)
 
 
 @app.route('/criar', methods=['POST'])
